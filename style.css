@@ -7,7 +7,7 @@
 .centered-links {
     text-align: center; /* Centers the links horizontally */
     width: 100%;
-    padding-left: 20%; /* Ensures it takes up the full width of the nav */
+    padding-left: 37%; /* Ensures it takes up the full width of the nav */
     padding-right: 5%;
     z-index: 1;
     color:#00883f;
@@ -23,8 +23,20 @@
     text-decoration: none;
     padding: 5px 0;
     color: #00883f !important; /* Adjust the color as needed */
-    
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 
 
 
