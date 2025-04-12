@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+    <title>Green Leaders Website </title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">  
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+
+  </head>
+
+    <style>
+        /* Scroll Animation CSS */
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-animation.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Slide Section */
+        .slider {
+            width: 100%;
+            height: 500px;
+            z-index: -1 !important;
+            overflow: hidden !important;
+            position: relative;
+            pointer-events: auto;
+
+        }
+
+        .slide a {
+            position: absolute;
+            z-index: 10000 !important;
+            pointer-events: all;
+
+}
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* White Arrows (without black background) */
+        /* Style for slider buttons container */
+
+
+/* Mobile-specific adjustments */
+
+        /* Adjust the right arrow position */
+      
+        /* Dots Section */
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            z-index: 2;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(101, 99, 99, 0.5);
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: rgb(37, 35, 35);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="header scroll-animation">
+        <nav>
+            <div class="logo">
+                <img src="images/GLLOGO.png" alt="Green Leaders">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="WhoWeAre.html">WHO WE ARE</a>
+                    <li class="dropdown">
+                        <a href="OurImpact.html">OUR IMPACT</a>
+                        <ul class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <div class="dropdown-column">
+                                    <img src="images/psh.jpg" alt="Image" style="width:100%; height:auto;">
+                                </div>
+                                <div class="dropdown-column">
+                                    <p>Green Leaders is committed to driving sustainable change through research, advocacy, education and action. Our initiatives focus on addressing critical environmental challenges, promoting resource efficiency, and supporting policies that enhance sustainability at local and global levels. By collaborating with communities, businesses, governments, and academic institutions, we work to implement practical solutions that protect ecosystems, improve public health, and foster sustainable development. Our impact spans multiple areas, including environmental awareness, scientific research, energy and water conservation, pollution reduction, and the advancement of ESG principles. Through these efforts, we strive to build a healthier, more sustainable, and resilient world for future generations.</p>
+                                </div>
+                                <div class="dropdown-column">
+                                    <li><a href="Awarness&Education.html">Environmental Awareness and Education</a></li>
+                                    <li><a href="Research&Studies.html">Research and Studies</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="GetInvolved.html">GET INVOLVED</a></li>
+                
+                    
+                    <!-- New line for awareness and research -->
+                    <div class="centered-links">
+                        <li><a href="NewsLetter.html">Newsletter</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        
+                    </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    
+    
+    <!-- Slide Section -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+               <a href="https://lobbyview.senseware.co/dashboards/12110235f1b594666ebefdc23192c5b3316430/" style="z-index:10000;"> 
+                 <img src="images/landing.png" alt="Slide 1"></a>
+            </div>
+            <div class="slide">
+                <img src="images/akh2.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/akh3.png" alt="Slide 3">
+            </div>
+        </div>
+        <div class="dots">
+            <div class="dot" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+        
+    </section>
+
+         
+</section>  
+   
+
+
+    <!-- About Section -->
+    <section id="whoweare" class="about2 scroll-animation">
+        <div class="row3">
+            <div class="course-col2">
+                <h3>Welcome To Green Leaders</h3>
+                <p>Founded in Lebanon in 2023, Green Leaders is a non-governmental organization committed to advancing sustainable development and environmental stewardship...</p>
+                <a href="WhoWeAre.html" class="hero-btn1">Explore More</a>
+            </div>
+            <div class="course-co2">
+                <h3>Become a Member</h3>
+                <p>Green Leaders currently offers three membership levels: Corporate, Professional, and Student...</p>
+                <a href="GetInvolved.html" class="hero-btn">Explore More</a>    
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<section class="asa">
+    <div class="slider-btns">
+        <button class="prev-btn" onclick="moveSlide(-1)">❮</button>
+        <button class="next-btn" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    
+    <div class="slide">
+            <img src="images/im.png">
+        </div>
+
+
+<section id="whoweare" class="about2 scroll-animation">
+        <div class="row3">
+            <div class="course-col2">
+                <h3>Live Air Quality in Beirut-Verdun</h3>
+            </div>
+        </div>
+            </section>
+            </section>
+        </div>
+        
+        
+<section class="asa">
+    <div class="slide">
+       <iframe src="https://lobbyview.senseware.co/dashboards/12110235f1b594666ebefdc23192c5b3316430/" 
+        width="100%" height="760" style="border:none;transform: scale(0.7);"></iframe>
+
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer style="background-color: #00883f; color: white; text-align: center; position: relative; ">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <!-- Column 1: Contact Us -->
+            <div style="min-width: 150px; margin: 10px;">
+                <p style="font-size: 16px; font-weight: bold;">
+                </p>
+            </div>
+    
+            <!-- Column 2: Social Media Links -->
+            <div style="min-width: 200px; margin: 10px; text-align: center;">
+                <h4 style="font-size: 20px;font-weight: 300; color: white;transform:translateX(-30%);">Follow us on</h4>
+                <div class="social-icons" style="margin-top: 10px; text-align: center;transform:translateX(-30%);">
+                    <a href="https://www.linkedin.com/company/grleaders/" target="_blank" style="color: white; margin: 0 15px; font-size: 22px; font-weight: bold;transform:translateX(-30%);">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/green_leaders.ngo" target="_blank" style="color: white; margin: 0 15px; font-size: 22px; font-weight: bold;transform:translateX(-30%);">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/gr_leaders" target="_blank" style="color: white; margin: 0 15px; font-size: 22px; font-weight: bold;transform:translateX(-30%);">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                    <a href="https://www.facebook.com/grleaders" target="_blank" style="color: white; margin: 0 15px; font-size: 22px; font-weight: bold;transform:translateX(-30%);">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Column 3: Copyright (aligned to the bottom left corner) -->
+        <p style="font-size: 12px; position: absolute; bottom: 10px; left: 10px;">&copy; 2025 Green Leaders. All Rights Reserved.</p>
+    </footer>
+    
+    
+    
+    
+    
+    <script>
+        function openSlide(slideIndex) {
+            document.querySelector('.slides').style.transform = `translateX(-${slideIndex * 100}%)`;
+            updateDots(slideIndex);
+        }
+    
+        function updateDots(slideIndex) {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[slideIndex].classList.add('active');
+        }
+    </script>
+    
+    
+    <script>
+        function openSlide(slideIndex) {
+            document.querySelector('.slides').style.transform = `translateX(-${slideIndex * 100}%)`;
+            updateDots(slideIndex);
+        }
+    
+        function updateDots(slideIndex) {
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[slideIndex].classList.add('active');
+        }
+    </script>
+    
+
+    <!-- JavaScript for Scroll Effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll(".scroll-animation");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(element => observer.observe(element));
+});
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function moveSlide(step) {
+    currentSlide = (currentSlide + step + slides.length) % slides.length;
+    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    updateDots();
+}
+
+function goToSlide(slideIndex) {
+    currentSlide = slideIndex;
+    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+    updateDots();
+}
+
+function updateDots() {
+    dots.forEach((dot, index) => {
+        dot.classList.remove('active');
+        if (index === currentSlide) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+    moveSlide(1); // Moves forward to the next slide
+}, 8000); // 5 seconds for auto-slide
+
+// Add event listener for the "next" button (replace '.next-button' with the actual class or ID of your button)
+document.querySelector('.next-button').addEventListener('click', function() {
+    moveSlide(1); // Move forward when the "next" button is clicked
+});
+
+// Optionally, you can add a "previous" button to move backward
+document.querySelector('.prev-button').addEventListener('click', function() {
+    moveSlide(-1); // Move backward when the "previous" button is clicked
+});
+
+        
+
+    </script>
+
+ 
+
+</body>
+</html>
